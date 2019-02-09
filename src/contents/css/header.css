@@ -1,0 +1,97 @@
+.header {width: 100%; margin-top: 20px;}
+.header nav ul {float: right; margin-bottom: 20px;}
+.header nav ul li {display: inline-block;}
+.header nav ul li:nth-child(n+1):nth-child(-n+2) {margin-right: 15px;}
+.bc{ color: #000; text-decoration: none;}
+.bc:hover{color: #00f;}
+
+.bc::before{
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #7a0;
+}
+.bc::after{
+    left: 5px;
+    box-sizing: border-box;
+    width: 3px;
+    height: 3px;
+    border: 3px solid transparent;
+    border-left: 3px solid #fff;
+}
+
+.headerMainArea {
+    clear: both;
+    width: 100%;
+    margin: 20px 0; 
+}
+
+.headerMainArea div:first-child {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.headerMainArea div:first-child h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: #00f;
+    margin-bottom: 5px;
+}
+
+.headerMainArea div:last-child {
+    float: right;
+}
+
+.headerMainArea div:last-child p:first-child {
+    margin-bottom: 10px;
+}
+
+.tel {font-size: 16px;}
+.number {
+    font-size: 28px;
+    color: #f00;
+    font-weight: bold;
+}
+.inquiry {
+    text-decoration: none;
+    background: orange;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.inquiry:hover {
+    color: #fff;
+}
+
+.headerBottom {
+    width: 100%;
+    clear: both;
+}
+
+.headerBottom ul li {
+    width: 200px;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #00f;
+}
+
+.headerBottom ul li:nth-child(n+1):nth-child(-n+4) {
+    border-right: 1px solid #fff;
+
+}
+
+.headerBottom ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.headerBottom ul li a:hover {
+    color: darkorange;
+}
+
+.headerBottom ul li a span{
+    font-size: 10px;
+}
